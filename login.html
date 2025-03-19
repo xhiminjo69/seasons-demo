@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons Bar - Admin Login</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <div class="admin-login-container">
+        <div class="admin-login-logo">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Logo.jpg-fSBMiXpFkbxjDoseu2R9YVbbAVtsJ4.jpeg" alt="Seasons Logo" class="logo-img">
+            <h1>Seasons <span>Admin</span></h1>
+        </div>
+        <div class="admin-login-form">
+            <h2>Login to Dashboard</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="admin-btn">Login</button>
+                </div>
+                <div id="login-error" class="error-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="admin-scripts.js"></script>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Simple authentication for demo purposes
+            // In a real application, this would be handled securely on the server
+            if (username === 'admin' && password === 'seasons123') {
+                // Store login state
+                localStorage.setItem('seasonsAdminLoggedIn', 'true');
+                // Redirect to dashboard
+                window.location.href = 'dashboard.html';
+            } else {
+                document.getElementById('login-error').textContent = 'Invalid username or password';
+            }
+        });
+    </script>
+</body>
+</html>
+

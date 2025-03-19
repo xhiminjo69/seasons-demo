@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons Bar - Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body class="admin-body">
+    <div class="admin-container">
+        <aside class="admin-sidebar">
+            <div class="admin-sidebar-header">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Logo.jpg-fSBMiXpFkbxjDoseu2R9YVbbAVtsJ4.jpeg" alt="Seasons Logo" class="logo-img">
+                <h2>Seasons</h2>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li class="active" data-section="dashboard-home"><i class="fas fa-home"></i> Dashboard</li>
+                    <li data-section="menu-editor"><i class="fas fa-utensils"></i> Menu</li>
+                    <li data-section="gallery-editor"><i class="fas fa-images"></i> Gallery</li>
+                    <li data-section="business-info"><i class="fas fa-info-circle"></i> Business Info</li>
+                    <li data-section="special-events"><i class="fas fa-calendar-alt"></i> Special Events</li>
+                    <li id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="admin-main">
+            <header class="admin-header">
+                <div class="admin-header-title">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="admin-user">
+                    <span>Admin</span>
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Staff.jpg-Yv3Lx4lA2XvVRZY00wDqXLr1l7S17S.jpeg" alt="Admin" class="admin-avatar">
+                </div>
+            </header>
+            
+            <div class="admin-content">
+                <!-- Dashboard Home Section -->
+                <section id="dashboard-home" class="admin-section active">
+                    <div class="admin-welcome">
+                        <h2>Welcome to your Seasons Bar Dashboard</h2>
+                        <p>Use the sidebar to navigate to different sections and manage your website content.</p>
+                    </div>
+                    
+                    <div class="admin-stats">
+                        <div class="stat-card">
+                            <i class="fas fa-utensils"></i>
+                            <div class="stat-info">
+                                <h3>Menu Items</h3>
+                                <p id="menu-count">12</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-images"></i>
+                            <div class="stat-info">
+                                <h3>Gallery Images</h3>
+                                <p id="image-count">5</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="stat-info">
+                                <h3>Special Events</h3>
+                                <p id="event-count">2</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-actions">
+                        <h3>Quick Actions</h3>
+                        <div class="action-buttons">
+                            <button class="admin-btn" data-action="menu-editor">Update Menu</button>
+                            <button class="admin-btn" data-action="gallery-editor">Manage Gallery</button>
+                            <button class="admin-btn" data-action="special-events">Add Event</button>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Menu Editor Section -->
+                <section id="menu-editor" class="admin-section">
+                    <h2>Menu Editor</h2>
+                    <div class="menu-tabs">
+                        <button class="menu-tab active" data-target="cocktails">Cocktails</button>
+                        <button class="menu-tab" data-target="beers">Beers</button>
+                        <button class="menu-tab" data-target="wines">Wines</button>
+                        <button class="menu-tab" data-target="snacks">Snacks</button>
+                    </div>
+                    
+                    <div class="menu-content">
+                        <div class="menu-category active" id="cocktails-editor">
+                            <div class="menu-items-list" id="cocktails-list">
+                                <!-- Menu items will be loaded here -->
+                            </div>
+                            
+                            <div class="add-item-form">
+                                <h3>Add New Cocktail</h3>
+                                <form id="add-cocktail-form">
+                                    <div class="form-group">
+                                        <label for="cocktail-name">Name</label>
+                                        <input type="text" id="cocktail-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cocktail-price">Price</label>
+                                        <input type="text" id="cocktail-price" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cocktail-description">Description</label>
+                                        <textarea id="cocktail-description" required></textarea>
+                                    </div>
+                                    <button type="submit" class="admin-btn">Add Cocktail</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-category" id="beers-editor">
+                            <div class="menu-items-list" id="beers-list">
+                                <!-- Beer items will be loaded here -->
+                            </div>
+                            
+                            <div class="add-item-form">
+                                <h3>Add New Beer</h3>
+                                <form id="add-beer-form">
+                                    <div class="form-group">
+                                        <label for="beer-name">Name</label>
+                                        <input type="text" id="beer-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="beer-price">Price</label>
+                                        <input type="text" id="beer-price" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="beer-description">Description</label>
+                                        <textarea id="beer-description" required></textarea>
+                                    </div>
+                                    <button type="submit" class="admin-btn">Add Beer</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-category" id="wines-editor">
+                            <!-- Similar structure for wines -->
+                            <div class="menu-items-list" id="wines-list">
+                                <!-- Wine items will be loaded here -->
+                            </div>
+                            
+                            <div class="add-item-form">
+                                <h3>Add New Wine</h3>
+                                <form id="add-wine-form">
+                                    <div class="form-group">
+                                        <label for="wine-name">Name</label>
+                                        <input type="text" id="wine-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="wine-price">Price</label>
+                                        <input type="text" id="wine-price" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="wine-description">Description</label>
+                                        <textarea id="wine-description" required></textarea>
+                                    </div>
+                                    <button type="submit" class="admin-btn">Add Wine</button>
+                                </form>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-category" id="snacks-editor">
+                            <!-- Similar structure for snacks -->
+                            <div class="menu-items-list" id="snacks-list">
+                                <!-- Snack items will be loaded here -->
+                            </div>
+                            
+                            <div class="add-item-form">
+                                <h3>Add New Snack</h3>
+                                <form id="add-snack-form">
+                                    <div class="form-group">
+                                        <label for="snack-name">Name</label>
+                                        <input type="text" id="snack-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="snack-price">Price</label>
+                                        <input type="text" id="snack-price" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="snack-description">Description</label>
+                                        <textarea id="snack-description" required></textarea>
+                                    </div>
+                                    <button type="submit" class="admin-btn">Add Snack</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Gallery Editor Section -->
+                <section id="gallery-editor" class="admin-section">
+                    <h2>Gallery Editor</h2>
+                    <div class="gallery-manager">
+                        <div class="current-gallery">
+                            <h3>Current Gallery Images</h3>
+                            <div class="gallery-grid" id="admin-gallery-grid">
+                                <!-- Gallery images will be loaded here -->
+                            </div>
+                        </div>
+                        
+                        <div class="upload-image">
+                            <h3>Upload New Image</h3>
+                            <form id="upload-image-form">
+                                <div class="form-group">
+                                    <label for="image-title">Image Title</label>
+                                    <input type="text" id="image-title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="image-description">Image Description</label>
+                                    <input type="text" id="image-description" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="image-file">Image File</label>
+                                    <input type="file" id="image-file" accept="image/*" required>
+                                </div>
+                                <div class="image-preview" id="image-preview">
+                                    <p>Image preview will appear here</p>
+                                </div>
+                                <button type="submit" class="admin-btn">Upload Image</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Business Info Section -->
+                <section id="business-info" class="admin-section">
+                    <h2>Business Information</h2>
+                    <form id="business-info-form">
+                        <div class="form-group">
+                            <label for="business-name">Business Name</label>
+                            <input type="text" id="business-name" value="Seasons Cocktail Bar" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="business-address">Address</label>
+                            <input type="text" id="business-address" value="Rruga Murat Terbaci, 9401, Vlorë, Albania" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="business-phone">Phone</label>
+                            <input type="text" id="business-phone" value="+355 69 209 2603" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="business-email">Email</label>
+                            <input type="email" id="business-email" value="info@seasonsbar.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="business-hours">Business Hours</label>
+                            <textarea id="business-hours" required>Open daily until 1:30 AM</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="about-text">About Us Text</label>
+                            <textarea id="about-text" rows="6" required>Located on the main street of Vlorë, Seasons Cocktail Bar offers a perfect blend of modern ambiance and traditional hospitality. With our beautiful view of the sea, we've quickly become a favorite spot for locals and tourists alike.</textarea>
+                        </div>
+                        <button type="submit" class="admin-btn">Save Changes</button>
+                    </form>
+                </section>
+                
+                <!-- Special Events Section -->
+                <section id="special-events" class="admin-section">
+                    <h2>Special Events</h2>
+                    <div class="events-list" id="events-list">
+                        <!-- Events will be loaded here -->
+                    </div>
+                    
+                    <div class="add-event-form">
+                        <h3>Add New Event</h3>
+                        <form id="add-event-form">
+                            <div class="form-group">
+                                <label for="event-title">Event Title</label>
+                                <input type="text" id="event-title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-date">Event Date</label>
+                                <input type="date" id="event-date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-time">Event Time</label>
+                                <input type="time" id="event-time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-description">Event Description</label>
+                                <textarea id="event-description" required></textarea>
+                            </div>
+                            <button type="submit" class="admin-btn">Add Event</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="admin-scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons Bar - Tropical Vibes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Logo.jpg-fSBMiXpFkbxjDoseu2R9YVbbAVtsJ4.jpeg" alt="Seasons Logo" class="logo-img">
+                <span>Seasons</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span class="highlight">Seasons</span></h1>
+            <p>Modern cocktails with a beautiful sea view</p>
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.7/5 (227 reviews)</span>
+            </div>
+            <a href="#menu" class="btn">View Our Menu</a>
+        </div>
+    </section>
+
+    <section id="highlights" class="highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <i class="fas fa-star"></i>
+                    <h3>4.7 Rating</h3>
+                    <p>Highly rated by our customers</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-water"></i>
+                    <h3>Sea View</h3>
+                    <p>Enjoy drinks with a beautiful view</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Coffee & Cocktails</h3>
+                    <p>Perfect for any time of day</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Prime Location</h3>
+                    <p>On the main street of Vlorë</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <div class="leaf-decoration">
+                    <img src="/placeholder.svg?height=50&width=100" alt="Leaf decoration" class="leaf">
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Ambienti.jpg-wlQKDSvvpjfE9IIdJdHxQjZH0wpUcr.jpeg" alt="Seasons Bar Interior" id="about-img">
+                </div>
+                <div class="about-text">
+                    <h3>A Modern Bar on the Main Street</h3>
+                    <p>Located on the main street of Vlorë, Seasons Cocktail Bar offers a perfect blend of modern ambiance and traditional hospitality. With our beautiful view of the sea, we've quickly become a favorite spot for locals and tourists alike.</p>
+                    <p>Our friendly and helpful staff are dedicated to providing exceptional service, ensuring every visit is memorable. Whether you're joining us for morning coffee or evening cocktails, you'll find reasonable prices and quality that exceeds expectations.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-cocktail"></i>
+                            <h4>Craft Cocktails</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-coffee"></i>
+                            <h4>Great Coffee</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-water"></i>
+                            <h4>Sea View</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <div class="leaf-decoration">
+                    <img src="/placeholder.svg?height=50&width=100" alt="Leaf decoration" class="leaf">
+                </div>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-target="cocktails">Cocktails</button>
+                <button class="menu-tab" data-target="beers">Beers</button>
+                <button class="menu-tab" data-target="wines">Wines</button>
+                <button class="menu-tab" data-target="snacks">Snacks</button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-category active" id="cocktails">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tropical Sunset</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p>Rum, pineapple juice, orange juice, grenadine, topped with a cherry</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Island Breeze</h3>
+                            <span class="price">$14</span>
+                        </div>
+                        <p>Vodka, coconut cream, lime juice, blue curaçao, served over crushed ice</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Mango Tango</h3>
+                            <span class="price">$13</span>
+                        </div>
+                        <p>Tequila, mango puree, lime juice, agave nectar, with a tajin rim</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Paradise Punch</h3>
+                            <span class="price">$15</span>
+                        </div>
+                        <p>White rum, dark rum, passion fruit, orange juice, lime, with tropical garnishes</p>
+                    </div>
+                </div>
+                <div class="menu-category" id="beers">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Island Lager</h3>
+                            <span class="price">$7</span>
+                        </div>
+                        <p>Crisp, refreshing lager with subtle tropical notes</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Coconut Porter</h3>
+                            <span class="price">$8</span>
+                        </div>
+                        <p>Rich, dark porter with hints of coconut and chocolate</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pineapple IPA</h3>
+                            <span class="price">$9</span>
+                        </div>
+                        <p>Hoppy IPA with refreshing pineapple undertones</p>
+                    </div>
+                </div>
+                <div class="menu-category" id="wines">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tropical Chardonnay</h3>
+                            <span class="price">$10 / $38</span>
+                        </div>
+                        <p>Notes of pineapple, vanilla, and a hint of oak</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Sunset Rosé</h3>
+                            <span class="price">$9 / $34</span>
+                        </div>
+                        <p>Bright, fruity rosé with strawberry and watermelon notes</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Coastal Red Blend</h3>
+                            <span class="price">$12 / $45</span>
+                        </div>
+                        <p>Smooth, medium-bodied blend with cherry and spice notes</p>
+                    </div>
+                </div>
+                <div class="menu-category" id="snacks">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Coconut Shrimp</h3>
+                            <span class="price">$14</span>
+                        </div>
+                        <p>Crispy coconut-crusted shrimp with mango dipping sauce</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tropical Nachos</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p>Tortilla chips topped with cheese, pineapple salsa, and avocado</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Island Sliders</h3>
+                            <span class="price">$16</span>
+                        </div>
+                        <p>Mini burgers with teriyaki glaze, grilled pineapple, and spicy mayo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <div class="leaf-decoration">
+                    <img src="/placeholder.svg?height=50&width=100" alt="Leaf decoration" class="leaf">
+                </div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Foto%20Ekstra1.jpg-PZLQArc46NEY11GRovEw0PHoIeFTHO.jpeg" alt="Seasons Bar Interior" class="gallery-img" id="gallery-img-1">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Cozy Atmosphere</h3>
+                            <p>Who doesn't love a good cocktail?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Craft%20Cocktails.jpg-DN1lR2hEGHA8HCceg9dBqcId8x8nK8.jpeg" alt="Craft Cocktails" class="gallery-img" id="gallery-img-2">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Craft Cocktails</h3>
+                            <p>Savor our signature mixes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Ambienti.jpg-wlQKDSvvpjfE9IIdJdHxQjZH0wpUcr.jpeg" alt="Tropical Interior" class="gallery-img" id="gallery-img-3">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Tropical Vibes</h3>
+                            <p>Relax in our green oasis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Staff.jpg-Yv3Lx4lA2XvVRZY00wDqXLr1l7S17S.jpeg" alt="Our Team" class="gallery-img" id="gallery-img-4">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Our Amazing Team</h3>
+                            <p>Expert mixologists at your service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Foto%20Ekstra1.jpg-PZLQArc46NEY11GRovEw0PHoIeFTHO.jpeg" alt="Comfortable Seating" class="gallery-img" id="gallery-img-5">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Comfortable Seating</h3>
+                            <p>Perfect for friends and gatherings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet Our Team</h2>
+                <div class="leaf-decoration">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Logo.jpg-fSBMiXpFkbxjDoseu2R9YVbbAVtsJ4.jpeg" alt="Seasons Logo" class="leaf">
+                </div>
+            </div>
+            <div class="team-content">
+                <div class="team-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Seasons%20Staff.jpg-Yv3Lx4lA2XvVRZY00wDqXLr1l7S17S.jpeg" alt="Seasons Bar Team" class="team-img">
+                </div>
+                <div class="team-text">
+                    <h3>Passionate Mixologists</h3>
+                    <p>Our team of skilled bartenders is dedicated to crafting the perfect drink for every occasion. With years of experience and a passion for mixology, they're always ready to recommend something special or create a custom cocktail just for you.</p>
+                    <p>Stop by and say hello – we can't wait to serve you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Us</h2>
+                <div class="leaf-decoration">
+                    <img src="/placeholder.svg?height=50&width=100" alt="Leaf decoration" class="leaf">
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Rruga Murat Terbaci, 9401, Vlorë, Albania</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Open daily until 1:30 AM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+355 69 209 2603</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@seasonsbar.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Seasons</h2>
+                    <p>Modern cocktails & coffee in Vlorë, Albania</p>
+                    <div class="social-links footer-social">
+                        <a href="https://www.instagram.com/seasons-cocktail-bar" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.tripadvisor.com" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for special offers and events</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Seasons Bar. All Rights Reserved. <a href="admin/login.html" class="admin-link">Admin</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
